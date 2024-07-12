@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Scroll to Last X and Y",
+  "version": "1.0",
+  "description": "Adds fixed buttons to scroll to the last X and last Y positions on a webpage.",
+  "permissions": ["activeTab", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://course-admin.pwskills.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
